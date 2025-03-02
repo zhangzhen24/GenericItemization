@@ -161,6 +161,9 @@ TOptional<TInstancedStruct<FAffixInstance>> UGenericItemizationStatics::Generate
 	{
 		MutableAffixInstance->SetAffixDefinition(AffixDefinitionHandle);
 
+		// @TODO: Add a mechanism for instantiating the AffixModifiers from the AffixDefinition onto the AffixInstance.
+		// Perhaps we need an FAffixModifierInstance type that takes in the FAffixModifier and makes a determined value for its effects.
+
 		TInstancedStruct<FAffixInstance> AffixInstance = TInstancedStruct<FAffixInstance>::Make();
 		AffixInstance.InitializeAsScriptStruct(NewAffixInstance.GetScriptStruct(), NewAffixInstance.GetMemory());
 

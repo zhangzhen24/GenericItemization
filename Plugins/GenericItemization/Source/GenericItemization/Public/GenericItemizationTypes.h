@@ -7,6 +7,7 @@
 #include "Engine/DataTable.h"
 #include "InstancedStruct.h"
 #include "Misc/Optional.h"
+#include "StructUtils/InstancedStruct.h"
 #include "GenericItemizationTypes.generated.h"
 
 class UItemDefinitionCollectionPickFunction;
@@ -443,7 +444,7 @@ public:
     int32 MaximumRequiredItemAffixLevel = 0;
 
     /* All of the Modifiers that this Affix applies. */
-    UPROPERTY(EditAnywhere, BlueprintReadOnly, meta = (BaseStruct = "/Script/GenericItemization.AffixModifier"))
+    UPROPERTY(EditAnywhere, BlueprintReadOnly)
     TArray<TInstancedStruct<FAffixModifier>> Modifiers;
 
 };

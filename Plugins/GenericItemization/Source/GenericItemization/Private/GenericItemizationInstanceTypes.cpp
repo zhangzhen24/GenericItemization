@@ -1,3 +1,5 @@
+// Copyright Fissure Entertainment, Pty Ltd. All Rights Reserved.
+
 #include "GenericItemizationInstanceTypes.h"
 #include "ItemManagement/ItemInventoryComponent.h"
 

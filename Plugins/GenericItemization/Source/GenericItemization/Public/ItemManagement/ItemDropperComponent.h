@@ -5,7 +5,7 @@
 #include "CoreMinimal.h"
 #include "Components/ActorComponent.h"
 #include "Engine/DataTable.h"
-#include "InstancedStruct.h"
+#include "GenericItemizationTypes.h"
 #include "ItemDropperComponent.generated.h"
 
 class AItemDrop;

@@ -82,3 +82,4 @@ DerivedDataCache/*
 *.dll
 *.pdb
 *.modules
+*.exp

@@ -9,7 +9,7 @@
 #include "Net/Serialization/FastArraySerializer.h"
 #include "GenericItemizationTableTypes.h"
 #include "ItemManagement/ItemSocketSettings.h"
-#include "StructView.h"
+#include "StructUtils/StructView.h"
 #include "GenericItemizationInstanceTypes.generated.h"
 
 /************************************************************************/
@@ -166,7 +166,7 @@ public:
     FGameplayTag QualityType;
 
     /* All of the actual Affixes that this Item has that would apply attribute modifiers from this Item. */
-    UPROPERTY(EditAnywhere, BlueprintReadOnly, meta = (BaseStruct = "/Script/GenericItemization.AffixInstance"))
+    UPROPERTY(EditAnywhere, BlueprintReadOnly)
     TArray<TInstancedStruct<FAffixInstance>> Affixes;
 
     /* The Context information around which this ItemInstance was called to be generated, this is not replicated. */
@@ -178,7 +178,7 @@ public:
     int32 StackCount;
 
     /* All of the actual Sockets that this Item has that other ItemInstances could be placed into. */
-    UPROPERTY(EditAnywhere, BlueprintReadOnly, meta = (BaseStruct = "/Script/GenericItemization.ItemSocketInstance"))
+    UPROPERTY(EditAnywhere, BlueprintReadOnly)
     TArray<TInstancedStruct<FItemSocketInstance>> Sockets;
 
     bool HasAnyAffixOfType(const FGameplayTag& AffixType) const;

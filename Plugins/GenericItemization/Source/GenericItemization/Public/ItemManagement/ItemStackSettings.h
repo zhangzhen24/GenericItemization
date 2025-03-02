@@ -4,7 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "UObject/Object.h"
-#include "InstancedStruct.h"
+#include "GenericItemizationTypes.h"
 #include "GameplayTagContainer.h"
 #include "ItemStackSettings.generated.h"
 

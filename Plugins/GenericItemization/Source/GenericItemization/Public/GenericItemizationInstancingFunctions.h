@@ -4,9 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "UObject/Object.h"
-#include "InstancedStruct.h"
 #include "GenericItemizationTypes.h"
-#include "GenericItemizationTableTypes.h"
 #include "GenericItemizationInstanceTypes.h"
 #include "GenericItemizationInstancingFunctions.generated.h"
 

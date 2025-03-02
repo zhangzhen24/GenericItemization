@@ -4,7 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "Components/ActorComponent.h"
-#include "InstancedStruct.h"
+#include "GenericItemizationTypes.h"
 #include "GenericItemizationInstanceTypes.h"
 #include "ItemInventoryComponent.generated.h"
 

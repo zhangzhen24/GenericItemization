@@ -4,7 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "UObject/Object.h"
-#include "InstancedStruct.h"
+#include "GenericItemizationTypes.h"
 #include "GameplayTagContainer.h"
 #include "StructView.h"
 #include "ItemSocketSettings.generated.h"
@@ -74,7 +74,7 @@ public:
 protected:
 
 	/* All of the Sockets that an ItemInstance with these settings can have. */
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, meta = (BaseStruct = "/Script/GenericItemization.ItemSocketDefinition"), Category = "Item Socket Settings")
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Item Socket Settings")
 	TArray<TInstancedStruct<FItemSocketDefinition>> SocketDefinitions;
 
 	/* Returns all of the SocketDefinitions on the ItemSocketSettings that will be set to Active on the ItemInstance when its generated. Default implementation returns nothing. */

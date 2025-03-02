@@ -5,7 +5,7 @@
 #include "CoreMinimal.h"
 #include "UObject/Object.h"
 #include "Engine/DataTable.h"
-#include "InstancedStruct.h"
+#include "GenericItemizationTypes.h"
 #include "ItemInstancer.generated.h"
 
 class UItemInstancingContextFunction;

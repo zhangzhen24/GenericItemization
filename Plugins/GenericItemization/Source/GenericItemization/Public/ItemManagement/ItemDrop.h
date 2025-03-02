@@ -4,7 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "InstancedStruct.h"
+#include "GenericItemizationTypes.h"
 #include "GenericItemizationInstanceTypes.h"
 #include "ItemDrop.generated.h"
 

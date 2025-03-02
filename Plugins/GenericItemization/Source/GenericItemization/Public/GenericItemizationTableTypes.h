@@ -5,7 +5,6 @@
 #include "CoreMinimal.h"
 #include "Engine/DataTable.h"
 #include "GenericItemizationTypes.h"
-#include "InstancedStruct.h"
 #include "GenericItemizationTableTypes.generated.h"
 
 /************************************************************************/
@@ -23,7 +22,7 @@ struct GENERICITEMIZATION_API FItemQualityRatioTypesTableEntry : public FTableRo
 public:
 
     /* List of the Ratios for different Item Qualities. These determine how likely an Item is to be of a particular Quality Type. */
-    UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BaseStruct = "/Script/GenericItemization.ItemQualityRatioType"))
+    UPROPERTY(EditAnywhere, BlueprintReadWrite)
     TArray<TInstancedStruct<FItemQualityRatioType>> ItemQualityRatios;
 };
 
@@ -58,7 +57,7 @@ public:
     TMap<FGameplayTag, FItemQualityTypeBonuses> QualityTypeBonuses;
 
     /* The different types of tables we will query for Item Drops (usually an Item Drop Table or Item Definition Collection). */
-    UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BaseStruct = "/Script/GenericItemization.ItemDropTableType", ExcludeBaseStruct, ShowTreeView))
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (ExcludeBaseStruct, ShowTreeView))
     TArray<TInstancedStruct<FItemDropTableType>> ItemDropTables;
 };
 
@@ -92,7 +91,7 @@ struct GENERICITEMIZATION_API FItemAffixCountRatiosTableEntry : public FTableRow
 public:
 
     /* Describes the range of the number of Affixes of a particular type that an ItemInstance can have. */
-    UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (BaseStruct = "/Script/GenericItemization.ItemAffixCountRatioType"))
+    UPROPERTY(EditAnywhere, BlueprintReadWrite)
     TArray<TInstancedStruct<FItemAffixCountRatioType>> AffixCountRatios;
 };
 
